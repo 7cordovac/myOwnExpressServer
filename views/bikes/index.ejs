@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="utf-8">
+    <title> </title>
+  </head>
+  <body>
+    Welcome to the bikes route!
+    <table border = "1">
+    <% for (var i=0; i<bikes.length; i++) {  %>
+     <tr>
+      <td><%= bikes[i].id %></td>
+      <td><%= bikes[i].name%></td>
+      <td><a href="/bikes/<%=bikes[i].id%>/edit">Edit this bike</a></td>
+   </tr>
+<% }  %>
+</table>
+
+<!-- code below  -->
+      <p>
+         <a href="bikes/new">
+            <button type="button" name="button">Add new bike</button>
+         </a>
+      </p>
+   </body>
+</html>

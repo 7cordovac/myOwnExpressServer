@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="utf-8">
+    <title> </title>
+  </head>
+  <body>
+     Welcome to the list of
+     <table border = "1">
+     <% for(var i=0; i<riders.length; i++) { %>
+        <tr>
+         <td><%= riders[i].first_name %></td>
+         <td><%= riders[i].last_name %></td>
+         <td><%= riders[i].bicycle_id %></td>
+         <td><a href="/riders/<%=riders[i].id%>/edit">Edit this rider</a></td>
+      </tr>
+      <% } %>
+   </table>
+
+   </body>
+</html>
